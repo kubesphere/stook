@@ -1,6 +1,6 @@
 {
-  "name": "stook-devtools",
-  "version": "1.10.0",
+  "name": "@kubed/stook-devtools",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "forsigner",
   "main": "dist/index.js",
