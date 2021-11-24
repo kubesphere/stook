@@ -19,4 +19,11 @@ export class Storage {
   static get<S = any>(key: any): Store<S> {
     return Storage.stores[key]
   }
+
+  static remove(key: any) {
+    const store = Storage.stores[key]
+    if (store) {
+      delete Storage.stores[key]
+    }
+  }
 }

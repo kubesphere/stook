@@ -25,6 +25,10 @@ export function emitStoreUpdate(data: Data) {
   emitter.emit(EventKey.STORE_UPDATED, data)
 }
 
+// export function emitStoreRemove(key: any) {
+//   emitter.off(key)
+// }
+
 export function onStoreInit(cb: (data: string) => void) {
   emitter.on(EventKey.STORE_INITED, key => {
     cb(key)
